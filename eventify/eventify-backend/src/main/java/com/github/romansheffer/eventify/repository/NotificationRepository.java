@@ -1,0 +1,13 @@
+package com.github.romansheffer.eventify.repository;
+
+
+import com.github.romansheffer.eventify.model.Notification;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface NotificationRepository extends JpaRepository<Notification, Long> {
+
+    Optional<Notification> findByUserEmail(String email);
+
+}

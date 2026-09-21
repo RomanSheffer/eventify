@@ -39,6 +39,8 @@
     "docker:logs": "docker-compose logs -f",
     "start:mocks": "REACT_APP_USE_MOCKS=true npm start",
     "start:backend": "REACT_APP_API_URL=http://localhost:8080 REACT_APP_USE_MOCKS=false npm start"
+
+
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +62,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.1.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }
